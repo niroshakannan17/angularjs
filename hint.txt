@@ -1,0 +1,7 @@
+Here we get the angular.js file
+https://angularjs.org/
+That angular.js file is needed to run a angularjs code
+
+in piece of code ng-app directive is starting point of angular code
+
+{{}} is a data binding experssion
