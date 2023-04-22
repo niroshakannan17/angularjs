@@ -5,3 +5,34 @@ That angular.js file is needed to run a angularjs code
 in piece of code ng-app directive is starting point of angular code
 
 {{}} is a data binding experssion
+
+22-04-2023
+-----------
+Module & contoller
+
+In angular js Module is a "Main method"
+It contain controlle,directive and fileter.
+Module is declartively specify how application is worked.
+it can be specified by angular.module("nameof module",[])
+module declartion have 2 parameters 
+1st parameter is name of the module , 
+2nd parameter is dependent module
+which means one module is dependent to the other externel module.
+if 2nd parameter is empty array it does not have a dependent to a other external module
+
+controller:
+contoller is javascript function.
+it get the data from model and send it to the view for display.
+
+function($scope){
+	$scope.msg = "hi";
+}
+
+run 
+declare the module
+declare the controller 
+register a controller with the module
+
+syntax for register a controller with module is
+modulevariable.contoller("name of the controller",controller function)
+---
