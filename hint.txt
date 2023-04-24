@@ -36,3 +36,13 @@ register a controller with the module
 syntax for register a controller with module is
 modulevariable.contoller("name of the controller",controller function)
 ---
+24-04-2023
+
+angular.min.js script does not gives a error in user understand formet
+angula.js script gives error with user understand
+
+if mistake happen "misspelled" in controller is gives eror
+if mistake happen "misspelled" in property it does not gives error
+
+we can create a module and controller in single line which is called "chaining"
+---------------
