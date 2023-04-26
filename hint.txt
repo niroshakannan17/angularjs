@@ -46,3 +46,14 @@ if mistake happen "misspelled" in property it does not gives error
 
 we can create a module and controller in single line which is called "chaining"
 ---------------
+26-04-2023
+ng-src is directive
+it is used for replacement of image element src
+
+
+question: if binding experssion is used in src tag in img element it show 404 but image is display why?
+ans: 2 request is made.
+
+1st req is made as soon as so that the binding expression is evaluvated.so that 404 occur
+in 2nd request binding expression evaluvated and get the image path fromm server and load the image in view for display
+------------------------------------
