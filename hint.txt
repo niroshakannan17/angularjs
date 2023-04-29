@@ -57,3 +57,16 @@ ans: 2 request is made.
 1st req is made as soon as so that the binding expression is evaluvated.so that 404 occur
 in 2nd request binding expression evaluvated and get the image path fromm server and load the image in view for display
 ------------------------------------
+29-04-2023
+Two way databinding
+which is model and  view is sync.
+which means if model is change and view is also change
+if view is change then model is change.
+That is called two way data binding
+
+if view is change and model will change.This happen by using "ng-model".
+ng-model is directive.This Directive canbe used only a some specific html element
+These are "input", "textarea","select"
+
+ng-model does not have a {{}}
+--------------------------------------

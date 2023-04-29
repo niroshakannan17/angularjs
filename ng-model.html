@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+	<script src="ng-model-script.js"></script>
+</head>
+
+<body ng-app="Tst">
+	<div ng-controller="TstCtrl">
+		Tamil  score: {{report.tamil}}
+		English  score: {{report.english}}
+		
+		<br>
+		Type a input box tamil mark model will update when value of input box change
+		<br>
+		<input type="text" ng-model="report.tamil">
+
+	</div>
+
+</body>
+
+
+</html>
