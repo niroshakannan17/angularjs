@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+	<script src="ng-repeat-script.js"></script>
+
+</head>
+<body ng-app="ngRepeatScriptModel">
+
+	<div ng-controller="ngRepeatController">
+
+		<table>
+			<thead>
+				<td>First Name</td>
+				<td>Last Name</td>
+				<td>Gender</td>
+				<td>Salery</td>
+			</thead>
+			<tbody ng-repeat="empData in emp">
+				<tr>
+					<td>{{empData.firstName}}</td>
+					<td>{{empData.lastName}}</td>
+					<td>{{empData.gender}}</td>
+					<td>{{empData.salery}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+		<ul  ng-repeat="studentData in stu">
+			<li>
+				{{studentData.name}}
+				<ul  ng-repeat="markData in studentData.mark">
+					<li>
+						{{markData.sub1}}
+						{{markData.sub2}}
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
