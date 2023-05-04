@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+		<script src="event-handling.js"></script>
+	</head>
+	<body ng-app="EventModle">
+		<div ng-controller="EventCtrl">
+			<table border="1">
+				<thead>
+					<th>Technology Name</th>
+					<th>Like</th>
+					<th>Dislike</th>
+					<th>Action</th>
+				</thead>
+				<tbody>
+					<tr ng-repeat="techs in tech">
+						<td>{{techs.name}}</td>
+						<td>{{techs.likes}}</td>
+						<td>{{techs.dislikes}}</td>
+						<td>
+							<input type="button" value="Like" ng-click="likeIncrement(techs)">
+
+							<input type="button" value="Dislike" ng-click="disLikeIncrement(techs)">
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
