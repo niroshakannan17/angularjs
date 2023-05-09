@@ -70,3 +70,33 @@ These are "input", "textarea","select"
 
 ng-model does not have a {{}}
 --------------------------------------
+09-05-2023
+ng-filter  do 3 things
+* formet the data
+* sort the data
+* filter the data
+ng-filter can be used in binding expression and directive
+{{ experssion| filtername:parameters }}
+
+Formet the data
+lowercase = formet the text into lowercase
+uppercase = formet the text into uppercase
+number = formet the number as text.like , seperator and decimal
+currency = formet the number as currency
+date= formet the data as string
+
+
+date
+YYYY - 2023 (full year)
+YY - 23 (year with last 2 digit)
+MMMM = July (Full month)
+MMM = JUl (Short Name of a month)
+MM =  01-12(gives number of a month with zero)
+M = 1-12(gives number of a month without zero)
+DD = 01-31(gives number of a date with zero)
+D= 1=31(gives number of a date without zero)
+
+limitTo:
+limitTo filter is used to limit the no of rows or charactor
+-------------------------------------------------------------------
+
