@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+		<script src="sort.js"></script>
+	</head>
+	<body ng-app="SortModel">
+		<div ng-controller="SortCtrl">
+
+			<select ng-model="sortby">
+				<option value="name"> sort by name ascending</option>
+				<option value="-salery"> sort by salery descending</option>
+				<option value="+salery"> sort by salery ascending</option>
+			</select>
+
+			<table border="1">
+				<thead>
+					<th>Name</th>
+					<th>Gender</th>
+					<th>DOB</th>
+					<th>Salery</th>
+				</thead>
+				<tbody>
+					<tr  ng-repeat="emply in emp | orderBy:sortby">
+						<td>{{emply.name}}</td>
+						<td>{{emply.gender}}</td>
+						<td>{{emply.dob | date:"dd/MM/yyyy"}}</td>
+						<td>{{emply.salery}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

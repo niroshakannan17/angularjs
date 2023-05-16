@@ -99,4 +99,16 @@ D= 1=31(gives number of a date without zero)
 limitTo:
 limitTo filter is used to limit the no of rows or charactor
 -------------------------------------------------------------------
+16-05-2023
 
+sort the data 
+orderBy filter
+syntax
+{{ binding expression | orderBy:experssion:reverse}}
+
+reverse parameter is set to false sort the data in ascending
+reverse parameter is set to true sort the data in decending
+
++ = assending
+- = decending
+-------------------------------------------------------------------
