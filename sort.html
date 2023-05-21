@@ -29,6 +29,26 @@
 					</tr>
 				</tbody>
 			</table>
+
+			<br>
+
+			<table border="1">
+				<thead>
+					<th ng-click="sortcolumn('name')">Name</th>
+					<th ng-click="sortcolumn('gender')">Gender</th>
+					<th ng-click="sortcolumn('dob')">DOB</th>
+					<th ng-click="sortcolumn('name')">Salery</th>
+				</thead>
+				<tbody>
+					<tr  ng-repeat="emply in emp | orderBy:sort_columname:reverse_parameter">
+						<td>{{emply.name}}</td>
+						<td>{{emply.gender}}</td>
+						<td>{{emply.dob | date:"dd/MM/yyyy"}}</td>
+						<td>{{emply.salery}}</td>
+					</tr>
+				</tbody>
+			</table>
+
 		</div>
 	</body>
 </html>

@@ -1,8 +1,9 @@
-var sort = angular
-			.module("SortModel",[])
-			.controller("SortCtrl", function($scope){
-				
-				var employees =[
+var mymodel = angular
+			  .module("sortClickModel",[])
+			  .controller("sortClickCtrl", function($scope){
+
+
+			  	var employees =[
 				{name:"Sara",dob:new Date("07-07-1996"),gender:"Female",salery:"50000"},
 				{name:"samu",dob:new Date("02-02-1995"),gender:"Female",salery:"57000"},
 				{name:"Karan",dob:new Date("07-06-1994"),gender:"Male",salery:"60000"},
@@ -11,15 +12,19 @@ var sort = angular
 				{name:"jotha",dob:new Date("04-11-1996"),gender:"Female",salery:"50000"}
 				];
 
-				$scope.emp = employees;
+				$scope.emplys = employees;
 
-				//$scope.sortby = "name";
-				$scope.reverse_parameter = false;
-				$scope.sort_columname = "name";
 
-				$scope.sortcolumn = function(value){
-					$scope.reverse_parameter = ($scope.sort_columname == value)?!$scope.reverse_parameter:false;
-					$scope.sort_columname = value;
-				};
+				//sort byclick
 
-			})
+				$scope.sortColumname= "name";
+				$scope.reverseParameter= false;
+
+				$scope.headClick = function(colname){
+					console.log(colname);
+					$scope.reverseParameter = ($scope.sortColumname==colname)?!$scope.reverseParameter:false;
+					$scope.sortColumname = colname;
+				}
+
+
+			  })

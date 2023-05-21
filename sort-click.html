@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+		<script src="sort-click.js"></script>
+	</head>
+	<body ng-app="sortClickModel">
+		<div ng-controller="sortClickCtrl">
+			<table border="1">
+				<thead>
+					<th ng-click="headClick('name')">Name</th>
+					<th ng-click="headClick('gender')">Gender</th>
+					<th ng-click="headClick('dob')">DOB</th>
+					<th ng-click="headClick('salery')">Salery</th>
+				</thead>
+				<tbody  ng-repeat="emp in emplys | orderBy:sortColumname:reverseParameter">
+					<tr>
+						<td>{{emp.name | lowercase}}</td>
+						<td>{{emp.gender | uppercase}}</td>
+						<td>{{emp.dob | date:"dd/MM/yyyy" }}</td>
+						<td>{{emp.salery | number:1}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
