@@ -112,3 +112,6 @@ reverse parameter is set to true sort the data in decending
 + = assending
 - = decending
 -------------------------------------------------------------------
+search:
+ search can be done by "filter" filter
+ {{ experssion | filer: variablename}}
