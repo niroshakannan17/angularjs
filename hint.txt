@@ -115,3 +115,17 @@ reverse parameter is set to true sort the data in decending
 search:
  search can be done by "filter" filter
  {{ experssion | filer: variablename}}
+------------------------------------------------------------------
+07-06-2023
+
+custom filter
+
+custom filter is a function and it return function
+syntax for custom filter
+
+filter("name of filter", function(){
+	return function(){
+
+	}
+})
+-------------------------------------------------------------------

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+	<script src="custom-filter.js"></script>
+</head>
+<body ng-app="customFilterModel">
+	
+	<div ng-controller="customFilterCtrl">
+		<table border="1">
+			<thead>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Salery</th>
+			</thead>
+			<tbody>
+				<tr ng-repeat="emp in employee">
+					<td>{{emp.name}}</td>
+					<td>{{emp.gender | sex}}</td>
+					<td>{{emp.salery}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>
