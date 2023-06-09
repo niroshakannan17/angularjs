@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+		<script src="ng-visibility.js"></script>
+	</head>
+	<body ng-app="ngVisibilityModel">
+		<div ng-controller="ngVisibilityCtrl">
+
+			<input type="checkbox" ng-model="saleryVis"> salery hide
+
+			<table border="1">
+				<thead>
+					<th>Name</th>
+					<th>Gender</th>
+					<th ng-hide="saleryVis">Salery</th>
+				</thead>
+				<tbody ng-repeat="emp in emplyees">
+					<tr>
+						<td>{{emp.name}}</td>
+						<td>{{emp.gender}}</td>
+						<td ng-hide="saleryVis">{{emp.salery}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

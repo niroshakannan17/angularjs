@@ -129,3 +129,16 @@ filter("name of filter", function(){
 	}
 })
 -------------------------------------------------------------------
+09-06-2023
+
+ng-show ng-hide
+ng-show and ng-hide is a angular directive.
+It is used for to set he visibility of html element
+
+syntax:
+ng-show="scope variable";
+ng-hide="scope variable";
+
+if scope variable is not defined then input type checkbox is set to be false
+if scope variable is defined or input type checkbox is checked is set to be true
+--------------------------------------------------------------------
