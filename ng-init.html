@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+	</head>
+	<body ng-app>
+		<div ng-init="employee = [
+				{firstName:'shasha',lastName:'karan',gender:'Female',salery:50000},
+				{firstName:'jotha',lastName:'srither',gender:'Female',salery:100000},
+				{firstName:'saira',lastName:'vikram',gender:'Female',salery:80000}
+				]">
+			<table>
+			<thead>
+				<td>First Name</td>
+				<td>Last Name</td>
+				<td>Gender</td>
+				<td>Salery</td>
+			</thead>
+			<tbody ng-repeat="empData in employee">
+				<tr>
+					<td>{{empData.firstName}}</td>
+					<td>{{empData.lastName}}</td>
+					<td>{{empData.gender}}</td>
+					<td>{{empData.salery}}</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</body>
+</html>
